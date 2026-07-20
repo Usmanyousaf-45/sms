@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import type { ClassSection } from "@/types";
-import type { SectionFormInput } from "@/hooks/UseClasses";
+import type { SectionFormInput } from "@/hooks/useClasses";
 import { TEACHERS } from "@/data";
 import { Input, Select } from "@/components/ui/Input";
 import { Button } from "@/components/ui/Button";

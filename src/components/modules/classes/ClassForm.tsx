@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import type { SchoolClass } from "@/types";
-import type { ClassFormInput } from "@/hooks/UseClasses";
+import type { ClassFormInput } from "@/hooks/useClasses";
 import { SUBJECTS } from "@/data";
 import { Input } from "@/components/ui/Input";
 import { MultiSelect } from "@/components/ui/MultiSelect";
