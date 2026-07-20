@@ -12,7 +12,7 @@ import { Modal, ConfirmDialog } from "@/components/ui/Modal";
 import { ProgressRow } from "@/components/ui/Charts";
 import { ClassForm } from "./ClassForm";
 import { SectionForm } from "./SectionForm";
-import type { ClassFormInput, SectionFormInput } from "@/hooks/UseClasses";
+import type { ClassFormInput, SectionFormInput } from "@/hooks/useClasses";
 
 // =============================================================================
 // CLASSES & SECTIONS MODULE
