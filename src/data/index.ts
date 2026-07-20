@@ -12,4 +12,5 @@ export * from "./seedHelpers";
 export * from "./mockLMS";
 export * from "./mockQuizzes";
 export * from "./Mockassignments";
+export * from "./mockExams";
 export * from "./mockdashboard";
