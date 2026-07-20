@@ -8,6 +8,11 @@ import { StudentsModule } from "@/components/modules/students/StudentsModule";
 import { TeachersModule } from "@/components/modules/teachers/TeachersModule";
 import { ParentsModule } from "@/components/modules/parents/ParentsModule";
 import { ClassesModule } from "@/components/modules/classes/ClassesModule";
+import { AttendanceModule } from "@/components/modules/attendance/AttendanceModule";
+import { TimetableModule } from "@/components/modules/timetable/TimetableModule";
+import { LMSModule } from "@/components/modules/lms/LMSModule";
+import { QuizModule } from "@/components/modules/lms/QuizModule";
+import { AssignmentsModule } from "@/components/modules/assignments/AssignmentsModule";
 import { Icon } from "@/components/ui/Icon";
 
 // =============================================================================
@@ -18,7 +23,7 @@ import { Icon } from "@/components/ui/Icon";
 // "coming in a later phase" placeholder rather than a blank screen.
 // =============================================================================
 
-const BUILT_MODULES = ["dashboard", "students", "teachers", "parents", "classes"];
+const BUILT_MODULES = ["dashboard", "students", "teachers", "parents", "classes", "attendance", "timetable", "lms", "quizzes", "assignments"];
 
 export function AppShell() {
   const { activeModule } = useAppNav();
@@ -34,6 +39,11 @@ export function AppShell() {
           {activeModule === "teachers" && <TeachersModule />}
           {activeModule === "parents" && <ParentsModule />}
           {activeModule === "classes" && <ClassesModule />}
+          {activeModule === "attendance" && <AttendanceModule />}
+          {activeModule === "timetable" && <TimetableModule />}
+          {activeModule === "lms" && <LMSModule />}
+          {activeModule === "quizzes" && <QuizModule />}
+          {activeModule === "assignments" && <AssignmentsModule />}
           {!BUILT_MODULES.includes(activeModule) && <ComingSoonPlaceholder module={activeModule} />}
         </main>
       </div>
