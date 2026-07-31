@@ -12,10 +12,10 @@ import { AttendanceModule } from "@/components/modules/attendance/AttendanceModu
 import { TimetableModule } from "@/components/modules/timetable/TimetableModule";
 import { LMSModule } from "@/components/modules/lms/LMSModule";
 import { QuizModule } from "@/components/modules/lms/QuizModule";
-import { FeesModule } from "@/components/modules/fees/Feesmodule";
 import { AssignmentsModule } from "@/components/modules/assignments/AssignmentsModule";
 import { ExamsModule } from "@/components/modules/exams/ExamsModule";
-
+import { FeesModule } from "@/components/modules/fees/FeesModule";
+import { LibraryModule } from "@/components/modules/library/LibraryModule";
 import { Icon } from "@/components/ui/Icon";
 
 // =============================================================================
@@ -26,7 +26,7 @@ import { Icon } from "@/components/ui/Icon";
 // "coming in a later phase" placeholder rather than a blank screen.
 // =============================================================================
 
-const BUILT_MODULES = ["dashboard", "students", "teachers", "parents", "classes", "attendance", "timetable", "lms", "quizzes", "assignments", "exams", "fees"];
+const BUILT_MODULES = ["dashboard", "students", "teachers", "parents", "classes", "attendance", "timetable", "lms", "quizzes", "assignments", "exams", "fees", "library"];
 
 export function AppShell() {
   const { activeModule } = useAppNav();
@@ -44,11 +44,12 @@ export function AppShell() {
           {activeModule === "classes" && <ClassesModule />}
           {activeModule === "attendance" && <AttendanceModule />}
           {activeModule === "timetable" && <TimetableModule />}
-          {activeModule === "exams" && <ExamsModule />}
           {activeModule === "lms" && <LMSModule />}
           {activeModule === "quizzes" && <QuizModule />}
           {activeModule === "assignments" && <AssignmentsModule />}
+          {activeModule === "exams" && <ExamsModule />}
           {activeModule === "fees" && <FeesModule />}
+          {activeModule === "library" && <LibraryModule />}
           {!BUILT_MODULES.includes(activeModule) && <ComingSoonPlaceholder module={activeModule} />}
         </main>
       </div>

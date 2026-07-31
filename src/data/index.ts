@@ -14,4 +14,6 @@ export * from "./mockQuizzes";
 export * from "./Mockassignments";
 export *from  "./Mockfees";
 export * from "./mockExams";
+export * from "./mocklibrary";
+
 export * from "./mockdashboard";
