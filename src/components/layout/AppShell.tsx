@@ -14,7 +14,7 @@ import { LMSModule } from "@/components/modules/lms/LMSModule";
 import { QuizModule } from "@/components/modules/lms/QuizModule";
 import { AssignmentsModule } from "@/components/modules/assignments/AssignmentsModule";
 import { ExamsModule } from "@/components/modules/exams/ExamsModule";
-import { FeesModule } from "@/components/modules/fees/FeesModule";
+import { FeesModule } from "@/components/modules/fees/Feesmodule";
 import { LibraryModule } from "@/components/modules/library/LibraryModule";
 import { Icon } from "@/components/ui/Icon";
 
